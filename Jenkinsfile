@@ -4,19 +4,19 @@ agent any
 
 stages{
 
-Stage("compile"){
+stage("compile"){
 
     steps{
 
-        sh "javac Test.java"
+        echo "hello pipeline"
     }
 
 }
-Stage("run"){
+stage("run"){
 
 
     steps{
-        sh "java Test"
+        echo "HEllow worl"
     }
 }
 
